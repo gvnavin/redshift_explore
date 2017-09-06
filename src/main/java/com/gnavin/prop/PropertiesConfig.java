@@ -36,12 +36,12 @@ public class PropertiesConfig {
             //load a properties file from class path, inside static method
             prop.load(input);
             
-            Enumeration<?> e = prop.propertyNames();
+            /*Enumeration<?> e = prop.propertyNames();
             while (e.hasMoreElements()) {
                 String key = (String) e.nextElement();
                 String value = prop.getProperty(key);
                 System.out.println("Key : " + key + ", Value : " + value);
-            }
+            }*/
             
         } catch (IOException ex) {
             ex.printStackTrace();
