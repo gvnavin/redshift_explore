@@ -63,6 +63,27 @@ public class Redshift {
         }
     }
     
+    public void insertDateIntoTables() throws SQLException {
+        /*
+            drop table datatest;
+
+            create table datatest(id int, timestamp1 timestamptz default sysdate);
+
+            insert into datatest (id) values (1);
+
+            select * from datatest;
+
+
+            create table my_table (id int, created_at datetime default sysdate);
+
+            select * from my_table;
+
+            insert into my_table (id) values (1);
+            
+        */
+
+    }
+    
     public void printTables() {
         Connection conn = null;
         Statement stmt = null;
